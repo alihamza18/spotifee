@@ -1,3 +1,4 @@
+import 'package:client/auth/view/pages/login_page.dart';
 import 'package:client/auth/view/pages/signup_page.dart';
 import 'package:client/core/theme.dart';
 import 'package:flutter/material.dart';
@@ -13,9 +14,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: AppTheme.darkThemeMode,
-      home: const SignupPage(),
+      home: const LoginPage(),
     );
   }
 }
-
